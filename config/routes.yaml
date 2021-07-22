@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+api_fibonacci:
+    path:       /test2/{num}
+    controller: App\Controller\TestTwoController::index
+    methods:    GET|HEAD
+
+api_magicGetter:
+    path:       /test3/getter/{magic}
+    controller: App\Controller\TestThreeController::getter
+    methods:    GET|POST|HEAD
+    
+api_magicSetter:
+    path:       /test3/setter/{magic}
+    controller: App\Controller\TestThreeController::setter
+    methods:    GET|HEAD
